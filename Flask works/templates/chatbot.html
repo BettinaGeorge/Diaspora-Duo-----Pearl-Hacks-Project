@@ -1,0 +1,25 @@
+<link rel = "stylesheet" href = "{{ url_for('static', filename = 'style.css' ) }}"/>
+<form action="{{ url_for('get_bot_response') }}" method="post" class="form-container">
+    <h1 style="font-family:Georgia, 'Times New Roman', Times, serif, Tahoma, sans-serif"
+        align ="center">Welcome!
+    </h1>
+
+    <h2 align ="center">
+        <img src = "{{ url_for('static', filename = 'logo.png' ) }}" style="width:250px;height:175px;" >
+    </h2>
+
+    <label style="font-family:Georgia, 'Times New Roman', Times, serif, Tahoma, sans-serif"
+        for="state_origin"><b>Country of Origin:</b</label>
+    <input type="text" id="state_origin" name="state_origin" required>
+    <br>
+    <label style="font-family:Georgia, 'Times New Roman', Times, serif, Tahoma, sans-serif"
+        for="country">Destination:</label>
+    <input type="text" id="country" name="country" required>
+    <br>
+    <label style="font-family:Georgia, 'Times New Roman', Times, serif, Tahoma, sans-serif"
+        for="language">Language:</label>
+    <input type="text" id="language" name="language" required>
+    <br>
+    <input style="font-family:Georgia, 'Times New Roman', Times, serif, Tahoma, sans-serif" type="submit" value="Submit">
+
+</form>
